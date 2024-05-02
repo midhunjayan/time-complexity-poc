@@ -1,0 +1,68 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50%;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.options li {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.flex-row textarea {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: lightgrey;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.error {
+    visibility: hidden;
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .flex-row textarea {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .options {
+        width: 100%;
+    }
+
+    .result {
+        margin-bottom: 25px;
+    }
+
+}

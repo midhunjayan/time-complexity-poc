@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time complexity</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <section class="main-container">
+
+        <h1>Time complexity</h1>
+
+        <div class="content">
+            <h2>What is time complexity?</h2>
+            <p>Time complexity is a concept in computer science that describes the amount of time an algorithm takes to
+                run as a function of the size of the input. It is a measure of how the runtime of an algorithm grows as
+                the size of the input grows.</p>
+            <p>Time complexity is typically expressed using big O notation, which describes the upper bound on the
+                runtime of an algorithm in terms of the size of the input. For example, an algorithm with a time
+                complexity of O(n) has a runtime that grows linearly with the size of the input, while an algorithm with
+                a time complexity of O(n^2) has a runtime that grows quadratically with the size of the input.</p>
+            <p>Understanding time complexity is important for analyzing the efficiency of algorithms and for comparing
+                different algorithms for the same problem. By analyzing the time complexity of an algorithm, we can
+                determine how the algorithm will perform on large inputs and make informed decisions about which
+                algorithm to use in a given situation.</p>
+        </div>
+        <div class="content">
+            <h2>Define your array</h2>
+            <span>Paste it in this format: [0, 1, 2]. Use simplest array either string or number
+                If you leave it empty length: 1000000 will be used
+            </span>
+            <section class="flex-row">
+                <textarea name="array_definintion" id="arrayTextArea" cols="30" rows="10" class="w-50"></textarea>
+                <aside aria-label="Showing result of execution" class="w-50 result" id="resultBox">
+
+                </aside>
+            </section>
+            <section class="flex-row">
+                <span id="errorMessage" class="error">
+
+                </span>
+            </section>
+
+        </div>
+
+        <ul class="options">
+            <li role="button" onclick="calculateTimeComplexity('push')">Array push</li>
+            <li onclick="calculateTimeComplexity('pop')">Array pop</li>
+            <li onclick="calculateTimeComplexity('shift')">Array shift</li>
+            <li onclick="calculateTimeComplexity('unshift')">Array unshift</li>
+        </ul>
+
+        <div class="content">
+
+        </div>
+    </section>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
